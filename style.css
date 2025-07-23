@@ -196,6 +196,9 @@ nav ul li a:hover::after{
 	border-radius: 10px;
 	display: block;
 	transition: transform 0.5s;
+
+	max-height: 700px;
+	object-fit: cover; /*Comment these lines out when you add more projects*/
 }
 .layer{
 	width: 100%;
@@ -237,7 +240,7 @@ nav ul li a:hover::after{
 .work:hover .layer{
 	height: 100%;
 }
-.btn{
+/*.btn{
 	display: block;
 	margin: 50px auto;
 	width: fit-content;
@@ -246,11 +249,12 @@ nav ul li a:hover::after{
 	border-radius: 6px;
 	text-decoration: none;
 	color: #fff;
-	transition: background 0.5s;
+	transition: background 0.5s;			Add this button back when there are more projects to add
 }
 .btn:hover{
 	background: #eb580c;
 }
+*/
 /*------------contact------------*/
 .contact-left{
 	flex-basis: 35%;
