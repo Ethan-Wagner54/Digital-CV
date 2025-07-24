@@ -135,6 +135,10 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
 	display: block;
 }
+.skill-sub-title{
+	color: #ed8955;
+	font-size: 16px;
+}
 .card{
 	padding: 2em;
 	border: 1px solid rgb(75, 82, 92);
