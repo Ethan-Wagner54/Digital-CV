@@ -11,8 +11,8 @@ html{
 body{
 	background: #080808;
 	color: #fff;
-
 }
+
 #header{
 	width: 100%;
 	height: 100vh;
@@ -126,7 +126,8 @@ nav ul li a:hover::after{
 }
 .tab-contents ul li span{
 	color: #ed8955;
-	font-size: 20px;
+	font-size: 25px;
+	font-weight: 700;
 }
 .tab-contents{
 	display: none;
@@ -134,7 +135,53 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
 	display: block;
 }
-
+.card{
+	padding: 2em;
+	border: 1px solid rgb(75, 82, 92);
+	border-radius: 10px;
+	background-color: #222429;
+	text-align: center;
+	position: relative; 
+}
+.grid-container{
+	display: grid;
+	border: none;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /*Change to 300px if a problem arises*/
+	gap: 15px;
+	justify-content: center;
+}
+/*------------CSS for border animations------------*/
+@property --angle{
+	syntax: "<angle>";
+	initial-value: 0deg;
+	inherits: false;
+}
+.card::after, .card::before {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-image: conic-gradient(from var(--angle), transparent 5%, #ed8955); /*change the transparent percentage if you want a smaller "tail" and add more colors if you want more elements */
+	top: 50%;
+	left: 50%;
+	translate: -50% -50%;
+	z-index: -1;
+	padding: 3px;
+	border-radius: 10px;
+	animation: 3s spin linear infinite;
+}
+.card::before{
+	filter: blur(1.5rem);
+	opacity: 0.01;
+}
+@keyframes spin{
+	from{
+		--angle: 0deg;
+	}
+	to{
+		--angle: 360deg;
+	}
+}
 /*------------services------------*/
 /*
 #services{
@@ -240,7 +287,7 @@ nav ul li a:hover::after{
 .work:hover .layer{
 	height: 100%;
 }
-/*.btn{
+.btn{
 	display: block;
 	margin: 50px auto;
 	width: fit-content;
@@ -249,17 +296,17 @@ nav ul li a:hover::after{
 	border-radius: 6px;
 	text-decoration: none;
 	color: #fff;
-	transition: background 0.5s;			Add this button back when there are more projects to add
+	transition: background 0.5s;			/*Add functionality to this button when there are more projects to add*/
 }
 .btn:hover{
 	background: #eb580c;
 }
-*/
+
 /*------------contact------------*/
 .contact-left{
 	flex-basis: 35%;
 }
-.contact-right{
+.contact-right {
 	flex-basis: 60%;
 }
 .contact-left p{
