@@ -188,7 +188,7 @@ nav ul li a:hover::after{
 }
 /*------------services------------*/
 
-#services{
+/*#services{
 	padding: 30px 0;
 }
 .services-list{
@@ -225,7 +225,7 @@ nav ul li a:hover::after{
 	background: #eb580c;
 	transform: translateY(-10px);
 
-}
+}*/
 
 /*------------portfolio------------*/
 #portfolio{
