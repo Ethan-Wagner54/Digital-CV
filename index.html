@@ -10,253 +10,287 @@
 	<script src="https://kit.fontawesome.com/39cd0d436a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<div id="header">
-	<div class="container">
-		<nav>
-			<img src="Images/logo-final.png" class="logo" />
-			<ul id="sidemenu">
-				<li><a href="#header">Home</a></li>
-				<li><a href="#about">About</a></li>
-				<!--<li><a href="#services">Services</a></li>-->
-				<li><a href="#portfolio">Portfolio</a></li>
-				<li><a href="#contact">Contact</a></li>
-				<i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-			</ul>
-			<i class="fa-solid fa-bars" onclick="openmenu()"></i>
-		</nav>
-		<div class="header-text">
-			<p>Aspiring Cybersecurity Professional</p>
-			<h1>Hi, I'm <span>Ethan Wagner</span><br />from South Africa</h1>
+	<div id="header">
+		<div class="container">
+			<nav>
+				<img src="Images/logo-final.png" class="logo" />
+				<ul id="sidemenu">
+					<li><a href="#header">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<!--<li><a href="#services">Services</a></li>-->
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+				</ul>
+				<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+			</nav>
+			<div class="header-text">
+				<p>Aspiring Cybersecurity Professional</p>
+				<h1>Hi, I'm <span>Ethan Wagner</span><br />from South Africa</h1>
+			</div>
 		</div>
 	</div>
-</div>
 
-<!-- ----------about---------->
-<div id="about">
-	<div class="container">
-		<div class="row">
-			<div class="about-col-1">
-				<img src="Images/user.jpg"/>
-			</div>
-			<div class="about-col-2">
-				<h1 class="sub-title">About Me</h1>
-				<p>
-					I am a motivated and eager young man looking to build my career in the Information Technology field with the prospect
-					of working my way up in a company to finally reach my goal of becoming a cyber security specialist. I believe I have 
-					the skills, motivation and drive to be an asset to any business.
-				</p>
-
-				<div class="tab-titles">
-					<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-					<p class="tab-links" onclick="opentab('experience')">Experience</p>
-					<p class="tab-links" onclick="opentab('education')">Education</p>
+	<!-- ----------about---------->
+	<div id="about">
+		<div class="container">
+			<div class="row">
+				<div class="about-col-1">
+					<img src="Images/user.jpg" />
 				</div>
-				<div class="tab-contents active-tab" id="skills">
-					<div class="grid-container">
+				<div class="about-col-2">
+					<h1 class="sub-title">About Me</h1>
+					<p>
+						I am a motivated and eager young man looking to build my career in the Information Technology field with the prospect
+						of working my way up in a company to finally reach my goal of becoming a cyber security specialist. I believe I have
+						the skills, motivation and drive to be an asset to any business.
+					</p>
+
+					<div class="tab-titles">
+						<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+						<p class="tab-links" onclick="opentab('experience')">Experience</p>
+						<p class="tab-links" onclick="opentab('education')">Education</p>
+					</div>
+					<div class="tab-contents active-tab" id="skills">
+						<div class="grid-container">
+							<div class="card">
+								<ul>
+									<li><span>Personal Skills</span><br /></li>
+									<li>Problem Solving</li>
+									<li>Fast Learner</li>
+									<li>Good Communication</li>
+									<li>Team Player</li>
+									<li>Flexible</li>
+									<li>Critical Thinking</li>
+								</ul>
+							</div>
+							<div class="card">
+								<ul>
+									<li><span>Techincal Skills</span><br /></li>
+									<li class="skill-sub-title">Intermediate</li>
+									<li>HTML</li>
+									<li>CSS</li>
+									<li>C#</li>
+									<li>Java</li>
+									<li class="skill-sub-title">Basic</li>
+									<li>Python</li>
+									<li>C++</li>
+								</ul>
+							</div>
+						</div>
+						<!--
+						<ul>
+							<li><span>Personal Skills:</span><br /></li>
+							<li>Problem Solving</li>
+							<li>Fast Learner</li>
+							<li>Good Communication</li>
+							<li>Team Player</li>
+							<li>Flexible</li>
+							<li>Critical Thinking</li>
+
+							<li><br /><span>Techincal Skills:</span><br /></li>
+							<li>HTML (Intermediate)</li>
+							<li>CSS (Intermediate)</li>
+							<li>C# (Intermediate)</li>
+							<li>Python (Basic)</li>
+							<li>Java (Intermediate)</li>
+							<li>C++ (Basic)</li>
+						</ul>
+						-->
+					</div>
+					<div class="tab-contents" id="experience">
 						<div class="card">
 							<ul>
-								<li><span>Personal Skills</span><br /></li>
-								<li>Problem Solving</li>
-								<li>Fast Learner</li>
-								<li>Good Communication</li>
-								<li>Team Player</li>
-								<li>Flexible</li>
-								<li>Critical Thinking</li>
+								<li><span>2024 - Current</span><br />Marketing - JR Promotions</li>
+								<li><span>June 2024</span><br />FNB/RMB Job Shadowing</li>
+								<li><span>Nov 2023 - Feb 2024</span><br />Floor Sales Representative - Chamberlain</li>
 							</ul>
 						</div>
+					</div>
+					<div class="tab-contents" id="education">
 						<div class="card">
 							<ul>
-								<li><span>Techincal Skills</span><br /></li>
-								<li class="skill-sub-title">Intermediate</li>
-								<li>HTML</li>
-								<li>CSS</li>
-								<li>C#</li>
-								<li>Java</li>
-								<li class="skill-sub-title">Basic</li>
-								<li>Python</li>
-								<li>C++</li>
+								<li><span>2022 - Current</span><br />NWU Potchefstroom BSc Information Technology</li>
+								<li><span>2017 - 2021</span><br />Leeuwenhof Akademie (High-School)</li>
 							</ul>
 						</div>
 					</div>
-					<!--
-					<ul>
-						<li><span>Personal Skills:</span><br /></li>
-						<li>Problem Solving</li>
-						<li>Fast Learner</li>
-						<li>Good Communication</li>
-						<li>Team Player</li>
-						<li>Flexible</li>
-						<li>Critical Thinking</li>
-
-						<li><br /><span>Techincal Skills:</span><br /></li>
-						<li>HTML (Intermediate)</li>
-						<li>CSS (Intermediate)</li>
-						<li>C# (Intermediate)</li>
-						<li>Python (Basic)</li>
-						<li>Java (Intermediate)</li>
-						<li>C++ (Basic)</li>
-					</ul>
-					-->
 				</div>
-				<div class="tab-contents" id="experience">
-					<div class="card">
-						<ul>
-							<li><span>2024 - Current</span><br />Marketing - JR Promotions</li>
-							<li><span>June 2024</span><br />FNB/RMB Job Shadowing</li>
-							<li><span>Nov 2023 - Feb 2024</span><br />Floor Sales Representative - Chamberlain</li>
-						</ul>
+			</div>
+		</div>
+	</div>
+	<!--------------services-------------->
+	<!--<div id="services">
+		<div class="container">
+			<h1 class="sub-title">My Services</h1>
+			<div class="services-list">
+				<div>
+					<i class="fa-solid fa-code"></i>
+					<h2>Web design</h2>
+					<p>Freelance Web Design</p>-->
+	<!--<a href="#">Learn more</a>--> <!--			Make the whole tile clickable	-->
+	<!--</div>
+	<div>
+		<i class="fa-solid fa-crop-simple"></i>
+		<h2>More coming soon</h2>
+		<p></p>
+		<a href="#">Learn more</a>
+	</div>-->
+	<!--<div>
+		<i class="fa-brands fa-whatsapp"></i>
+		<h2>App design</h2>
+		<p>warra warra warra description things</p>
+		<a href="#">Learn more</a>
+	</div>-->
+	<!--</div>
+		</div>
+	</div>-->
+	<!--------------Collaborative Projects-------------->
+	<div id="portfolio">
+		<div class="container">
+			<h1 class="sub-title">My Collaborative Projects</h1>
+			<div class="work-list">
+				<div class="work">
+					<img src="Images/work-1.png" />
+					<div class="layer">
+						<h3>Messaging App</h3>
+						<p>A fully portable messaging app that runs on a browser.</p>
+						<a href="https://github.com/JanreO/MessageAppGroup4.git" target="_blank"><i class="fa-solid fa-link"></i></a>
 					</div>
 				</div>
-				<div class="tab-contents" id="education">
-					<div class="card">
-						<ul>
-							<li><span>2022 - Current</span><br />NWU Potchefstroom BSc Information Technology</li>
-							<li><span>2017 - 2021</span><br />Leeuwenhof Akademie (High-School)</li>
-						</ul>
+				<div class="work">
+					<img src="Images/work-2.png" />
+					<div class="layer">
+						<h3>Catering Solutions App (One stop events)</h3>
+						<p>An app that organises and plans events for a company</p>
+						<a href="https://github.com/tiaan-coetzee/cmpg223.git" target="_blank"><i class="fa-solid fa-link"></i></a>
 					</div>
 				</div>
+				<!--
+				<div class="work">
+					<img src="Images/work-3.png" />
+					<div class="layer">
+						<h3>Online Shopping App</h3>
+						<p>warra warra warra description things</p>
+						<a href="#" target="_blank"><i class="fa-solid fa-link"></i></a>
+					</div>
+				</div>
+				-->
+			</div>
+			<a href="#" class="btn">More coming soon</a>
+		</div>
+	</div>
+
+	<!--------------Personal Projects-------------->
+	<div id="portfolio">
+		<div class="container">
+			<h1 class="sub-title">My Personal Projects</h1>
+			<div class="work-list">
+				<div class="work">
+					<img src="Images/musicshop.jpg" />
+					<div class="layer">
+						<h3>Music Etc. Website</h3>
+						<p>I designed a website for a music shop in Potchefstroom.</p>
+						<a href="https://ethan-wagner54.github.io/Music-etc./" target="_blank"><i class="fa-solid fa-link"></i></a>
+					</div>
+				</div>
+				<div class="work">
+					<img src="Images/work-2.png" />
+					<div class="layer">
+						<h3>Exam Timetable Script</h3>
+						<p>This script asks the student for their modules and sends them a personalized message showing their timetable.</p>
+						<a href="" target="_blank"><i class="fa-solid fa-link"></i></a>
+					</div>
+				</div>
+				<!--
+				<div class="work">
+					<img src="Images/work-3.png" />
+					<div class="layer">
+						<h3>Online Shopping App</h3>
+						<p>warra warra warra description things</p>
+						<a href="#" target="_blank"><i class="fa-solid fa-link"></i></a>
+					</div>
+				</div>
+				-->
+			</div>
+			<a href="#" class="btn">More coming soon</a>
+		</div>
+	</div>
+	<!--------------contact-------------->
+	<div id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="contact-left">
+					<h1 class="sub-title">Contact Me</h1>
+					<p><i class="fa-solid fa-envelope"></i> erwagner938@gmail.com</p>
+					<p><i class="fa-solid fa-phone"></i> 082 592 9738</p>
+					<div class="social-icons">
+						<a href="https://www.facebook.com/ethan.wagner.906" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+						<a href="https://www.instagram.com/ethan_r_w_/?next=%2F&hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+						<a href="https://www.youtube.com/@ethans_jam_sessions" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+						<a href="https://www.tiktok.com/@ethans_jam_sessions" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+						<a href="https://www.linkedin.com/in/ethan-wagner-46a089242/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+					</div>
+					<a href="Images/CV.pdf" download class="btn btn2">Download CV</a>
+				</div>
+				<div class="contact-right">
+					<form name="submit-to-google-sheet">
+						<input type="text" name="Name" placeholder="Your Name" required />
+						<input type="email" name="Email" placeholder="Your Email Address" required />
+						<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+						<button type="submit" class="btn btn2">Submit</button>
+					</form>
+					<span id="msg"></span>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
-<!--------------services-------------->
-
-<!--<div id="services">
-	<div class="container">
-		<h1 class="sub-title">My Services</h1>
-		<div class="services-list">
-			<div>
-				<i class="fa-solid fa-code"></i>
-				<h2>Web design</h2>
-				<p>Freelance Web Design</p>-->
-				<!--<a href="#">Learn more</a>--> <!--			Make the whole tile clickable	-->
-			<!--</div>
-			<div>
-				<i class="fa-solid fa-crop-simple"></i>
-				<h2>More coming soon</h2>
-				<p></p>
-				<a href="#">Learn more</a>
-			</div>-->
-			<!--<div>
-				<i class="fa-brands fa-whatsapp"></i>
-				<h2>App design</h2>
-				<p>warra warra warra description things</p>
-				<a href="#">Learn more</a>
-			</div>-->
-		<!--</div>
-	</div>
-</div>-->
-
-<!--------------portfolio-------------->
-<div id="portfolio">
-	<div class="container">
-		<h1 class="sub-title">My Collaborative Projects</h1>
-		<div class="work-list">
-			<div class="work">
-				<img src="Images/work-1.png" />
-				<div class="layer">
-					<h3>Messaging App</h3>
-					<p>A fully portable messaging app that runs on a browser.</p>
-					<a href="https://github.com/JanreO/MessageAppGroup4.git" target="_blank"><i class="fa-solid fa-link"></i></a>
-				</div>
-			</div>
-			<div class="work">
-				<img src="Images/work-2.png" />
-				<div class="layer">
-					<h3>Catering Solutions App (One stop events)</h3>
-					<p>An app that organises and plans events for a company</p>
-					<a href="https://github.com/tiaan-coetzee/cmpg223.git" target="_blank"><i class="fa-solid fa-link"></i></a>
-				</div>
-			</div>
-			<!--
-			<div class="work">
-				<img src="Images/work-3.png" />
-				<div class="layer">
-					<h3>Online Shopping App</h3>
-					<p>warra warra warra description things</p>
-					<a href="#" target="_blank"><i class="fa-solid fa-link"></i></a>
-				</div>
-			</div>
-			-->
-		</div>
-		 <a href="#" class="btn">More coming soon</a>
-	</div>
-</div>
-<!--------------contact-------------->
-<div id="contact">
-	<div class="container">
-		<div class="row">
-			<div class="contact-left">
-				<h1 class="sub-title">Contact Me</h1>
-				<p><i class="fa-solid fa-envelope"></i> erwagner938@gmail.com</p>
-				<p><i class="fa-solid fa-phone"></i> 082 592 9738</p>
-				<div class="social-icons">
-					<a href="https://www.facebook.com/ethan.wagner.906" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-					<a href="https://www.instagram.com/ethan_r_w_/?next=%2F&hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-					<a href="https://www.youtube.com/@ethans_jam_sessions" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-					<a href="https://www.tiktok.com/@ethans_jam_sessions" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-					<a href="https://www.linkedin.com/in/ethan-wagner-46a089242/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-				</div>
-				<a href="Images/CV.pdf" download class="btn btn2">Download CV</a>
-			</div>
-			<div class="contact-right">
-				<form name="submit-to-google-sheet">
-					<input type="text" name="Name" placeholder="Your Name" required/>
-					<input type="email" name="Email" placeholder="Your Email Address" required/>
-					<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-					<button type="submit" class="btn btn2">Submit</button>
-				</form>
-				<span id="msg"></span>
-			</div>
-		</div>
-	</div>
-</div>
 
 
-<script>
-	var tablinks = document.getElementsByClassName("tab-links");
-	var tabcontents = document.getElementsByClassName("tab-contents");
-	function opentab(tabname) {
-		for (tablink of tablinks) {
-			tablink.classList.remove("active-link");
+	<script>
+		var tablinks = document.getElementsByClassName("tab-links");
+		var tabcontents = document.getElementsByClassName("tab-contents");
+		function opentab(tabname) {
+			for (tablink of tablinks) {
+				tablink.classList.remove("active-link");
+			}
+			for (tabcontent of tabcontents) {
+				tabcontent.classList.remove("active-tab");
+			}
+			event.currentTarget.classList.add("active-link");
+			document.getElementById(tabname).classList.add("active-tab");
 		}
-        for (tabcontent of tabcontents) {
-            tabcontent.classList.remove("active-tab");
+	</script>
+
+	<script>
+		var sidemenu = document.getElementById("sidemenu");
+
+		function openmenu() {
+			sidemenu.style.right = "0";
 		}
-		event.currentTarget.classList.add("active-link");
-		document.getElementById(tabname).classList.add("active-tab");
-	}
-</script>
+		function closemenu() {
+			sidemenu.style.right = "-200px";
+		}
+	</script>
 
-<script>
-	var sidemenu = document.getElementById("sidemenu");
+	<script>
+		const scriptURL = 'https://script.google.com/macros/s/AKfycbxXzAmhOiasDoKZhAwarQezloeK9b5Sa0aIiNMG7SDy0UL9leHFuQKSv700CohUp1Y/exec'
+		const form = document.forms['submit-to-google-sheet']
+		const msg = document.getElementById("msg")
 
-	function openmenu() {
-		sidemenu.style.right = "0";
-	}
-    function closemenu() {
-        sidemenu.style.right = "-200px";
-    }
-</script>
-
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxXzAmhOiasDoKZhAwarQezloeK9b5Sa0aIiNMG7SDy0UL9leHFuQKSv700CohUp1Y/exec'
-	const form = document.forms['submit-to-google-sheet']
-	const msg = document.getElementById("msg")
-
-	form.addEventListener('submit', e => {
-		e.preventDefault()
-		fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-			.then(response => {
-				msg.innerHTML = "Message sent successfully"
-				setTimeout(function () {
-					msg.innerHTML = ""
-				}, 5000)
-				form.reset()
-			})
-			.catch(error => console.error('Error!', error.message))
-	})
-</script>
+		form.addEventListener('submit', e => {
+			e.preventDefault()
+			fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+				.then(response => {
+					msg.innerHTML = "Message sent successfully"
+					setTimeout(function () {
+						msg.innerHTML = ""
+					}, 5000)
+					form.reset()
+				})
+				.catch(error => console.error('Error!', error.message))
+		})
+	</script>
 
 </body>
 </html>
