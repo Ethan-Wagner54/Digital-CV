@@ -154,7 +154,9 @@ nav ul li a:hover::after{
 	gap: 15px;
 	justify-content: center;
 }
+
 /*------------CSS for border animations------------*/
+
 @property --angle{
 	syntax: "<angle>";
 	initial-value: 0deg;
@@ -165,18 +167,18 @@ nav ul li a:hover::after{
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	background-image: conic-gradient(from var(--angle), transparent 5%, #ed8955); /*change the transparent percentage if you want a smaller "tail" and add more colors if you want more elements */
+	background-image: conic-gradient(from var(--angle), transparent -150%, #ed8955, grey, #ed8955, grey, #ed8955, grey, #ed8955, grey, #ed8955, grey); /*change the transparent percentage if you want a smaller "tail" and add more colors if you want more elements */
 	top: 50%;
 	left: 50%;
 	translate: -50% -50%;
 	z-index: -1;
 	padding: 3px;
 	border-radius: 10px;
-	animation: 3s spin linear infinite;
+	animation: 15s spin linear infinite;
 }
 .card::before{
 	filter: blur(1.5rem);
-	opacity: 0.01;
+	opacity: 0.5;
 }
 @keyframes spin{
 	from{
