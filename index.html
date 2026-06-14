@@ -36,7 +36,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="about-col-1">
-					<img src="Images/user.jpg" />
+					<img src="Images/IMG_8709.jpg" />
 				</div>
 				<div class="about-col-2">
 					<h1 class="sub-title">About Me</h1>
@@ -55,10 +55,10 @@
 						<div class="grid-container">
 							<div class="card">
 								<ul>
-									<li><span>Personal Skills</span><br /></li>
+									<li><span>Soft Skills</span><br /></li>
 									<li>Problem Solving</li>
 									<li>Fast Learner</li>
-									<li>Good Communication</li>
+									<li>Effective Communication</li>
 									<li>Team Player</li>
 									<li>Flexible</li>
 									<li>Critical Thinking</li>
@@ -76,6 +76,7 @@
 									<li>C#</li>
 									<li>Java</li>
 									<li class="skill-sub-title">Basic</li>
+									<li>Linux</li>
 									<li>Python</li>
 									<li>C++</li>
 									<li>JavaScript</li>
@@ -105,20 +106,23 @@
 					<div class="tab-contents" id="experience">
 						<div class="card">
 							<ul>
-								<li><span>March - June 2026</span><br />Event Management Analyst - Klipboard</li>
+								<li><span>March - June 2026</span><br />Event Management Analyst - Klipboard (Formerly Kerridge Commercial Systems)</li>
 								<li><span>2024 - 2025</span><br />Marketing - JR Promotions</li>
-								<li><span>June 2024</span><br />FNB/RMB Job Shadowing</li>
+								<li><span>June 2024</span><br />Job Shadowing - FNB/RMB</li>
 								<li><span>Nov 2023 - Feb 2024</span><br />Floor Sales Representative - Chamberlain</li>
 							</ul>
 						</div>
 					</div>
-					<div class="tab-contents" id="education">
-						<div class="card">
-							<ul>
-								<li><span>2022 - 2025</span><br />NWU Potchefstroom BSc Information Technology</li>
-								<li><span>2017 - 2021</span><br />Leeuwenhof Akademie</li>
-							</ul>
-						</div>
+						<div class="tab-contents" id="education">
+							<div class="card">
+								<ul>
+									<li><span>2022 - 2025</span><br />BSc Information Technology - NWU Potchefstroom</li>
+									<li><span>2017 - 2021</span><br />Primary and High School - Leeuwenhof Akademie</li>
+								</ul>
+								<div style="text-align: right; margin-top: 20px;">		<!-- This is AI slop. If something is messed up, question this... -->
+									<button class="cert-btn" onclick="openCertModal()">View All Certificates</button>	<!-- This is AI slop. If something is messed up, question this... -->
+								</div>
+							</div>
 					</div>
 				</div>
 			</div>
@@ -249,6 +253,79 @@
 				</div>
 			</div>
 		</div>
+
+		<!------- Certificate Modal ------->									<!-- This is AI slop. If something is messed up, question this... -->
+		<div id="certModal" class="cert-modal-overlay" onclick="closeCertModal(event)">
+			<div class="cert-modal">
+				<div class="cert-modal-header">
+					<h2>Certificates</h2>
+					<i class="fa-solid fa-xmark" onclick="closeCertModal()" style="cursor:pointer; font-size: 22px;"></i>
+				</div>
+				<div class="cert-modal-body">
+					<h3 class="cert-section-title">Technical Skills</h3>
+					<div class="cert-grid">
+						<div class="cert-item" onclick="openLightbox(this)"">
+							<img src="certificates/technical/Phishing Identification For End Users (COMPRESSED).jpg" alt="Phishing Identification For End Users" />
+							<p>Phishing Identification For End Users</p>
+						</div>
+						<!--<div class="cert-item">
+							<img src="path/to/certificate2.jpg" alt="Certificate Name 2" />
+							<p>Certificate Name 2</p>
+						</div>  -->
+						<!-- Add more technical certificates here -->
+					</div>
+
+					<h3 class="cert-section-title">Soft Skills</h3>
+					<div class="cert-grid">
+						<div class="cert-item" onclick="openLightbox(this)">
+							<img src="certificates/soft/Best Practise Decision Making.jpg" alt="Certificate Name 3" />
+							<p>Best Practise Decision Making</p>
+						</div>
+						<div class="cert-item" onclick="openLightbox(this)">
+							<img src="certificates/soft/Body language non-verbal communication for leaders.jpg" alt="Certificate Name 4" />
+							<p>Body language non-verbal communication for leaders</p>
+						</div>
+						<div class="cert-item" onclick="openLightbox(this)">
+							<img src="certificates/soft/Communication Essentials Listening Reflecting and Rephrasing.jpg" alt="Certificate Name 4" />
+							<p>Communication Essentials Listening Reflecting and Rephrasing</p>
+						</div>
+						<div class="cert-item" onclick="openLightbox(this)">
+							<img src="certificates/soft/Crisis Communication Skills.jpg" alt="Certificate Name 4" />
+							<p>Crisis Communication Skills</p>
+						</div>
+						<div class="cert-item" onclick="openLightbox(this)">
+							<img src="certificates/soft/Defusing conflict.jpg" alt="Certificate Name 4" />
+							<p>Defusing conflict</p>
+						</div>
+						<div class="cert-item" onclick="openLightbox(this)">
+							<img src="certificates/soft/How to use message framing techniques.jpg" alt="Certificate Name 4" />
+							<p>How to use message framing techniques</p>
+						</div>
+						<div class="cert-item" onclick="openLightbox(this)">
+							<img src="certificates/soft/Leading with emotional intelligence during change.jpg" alt="Certificate Name 4" />
+							<p>Leading with emotional intelligence during change</p>
+						</div>
+						<div class="cert-item" onclick="openLightbox(this)">
+							<img src="certificates/soft/The power of asking open ended questions.jpg" alt="Certificate Name 4" />
+							<p>The power of asking open ended questions</p>
+						</div>
+						<div class="cert-item" onclick="openLightbox(this)">
+							<img src="certificates/soft/Top 7 Skills to Future-Proof Your Career.jpg" alt="Certificate Name 4" />
+							<p>Top 7 Skills to Future-Proof Your Career</p>
+						</div>
+						<!-- Add more soft skill certificates here -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+		<!-- Lightbox -->															<!-- This is AI slop... If something is wrong, look here -->
+	<div id="lightbox" class="lightbox-overlay" onclick="closeLightbox()">
+		<i class="fa-solid fa-xmark lightbox-close"></i>
+		<img id="lightbox-img" src="" alt="" />
+		<p id="lightbox-caption"></p>
 	</div>
 
 
@@ -296,6 +373,41 @@
 				.catch(error => console.error('Error!', error.message))
 		})
 	</script>
+
+	<script>															  	/* This is AI slop. If something is messed up, question this...*/
+	function openCertModal() {
+		document.getElementById("certModal").classList.add("active");
+		document.body.style.overflow = "hidden";
+	}
+	function closeCertModal(event) {
+		if (!event || event.target === document.getElementById("certModal")) {
+			document.getElementById("certModal").classList.remove("active");
+			document.body.style.overflow = "";
+		}
+	}
+	document.addEventListener("keydown", function(e) {
+		if (e.key === "Escape") closeCertModal();
+	});
+	</script>
+
+	<script>																/* This is AI slop. If something is messed up, question this...*/
+    function openLightbox(certItem) {
+        const img = certItem.querySelector("img");
+        const caption = certItem.querySelector("p");
+        document.getElementById("lightbox-img").src = img.src;
+        document.getElementById("lightbox-img").alt = img.alt;
+        document.getElementById("lightbox-caption").textContent = caption.textContent;
+        document.getElementById("lightbox").classList.add("active");
+        document.body.style.overflow = "hidden";
+    }
+    function closeLightbox() {
+        document.getElementById("lightbox").classList.remove("active");
+        document.body.style.overflow = "";
+    }
+    document.addEventListener("keydown", function(e) {
+        if (e.key === "Escape") closeLightbox();
+    });
+</script>
 
 </body>
 </html>
