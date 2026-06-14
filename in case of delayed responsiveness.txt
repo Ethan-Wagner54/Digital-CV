@@ -1,0 +1,3 @@
+IF THE WEBSITE BECOMES TOO SLOW AFTER ADDING MULTIPLE CERTIFICATES
+
+Compress the images to keep quality but to have smaller file sizes since all the images load at once.
